@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../f1.css">
+  <title>Mercedes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100vw;
+      margin: 0;
+      background-color: #00D2BE;
+      background-image: url(../background-image/backgroundmercedes.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="corpo">
+    <a href="javascript:history.back()" class="back-button">Voltar</a>
+    <div class="header-team">
+      <img src="../logos/mercedes.jpg" alt="">
+      <h1 >Mercedes</h1>
+    </div>
+    <div class="container">
+      <div class="images">
+        <img class="piloto" src="../pilotos/hamilton.jpg" alt="Lewis Hamilton" data-title="Lewis Hamilton" id="img1" data-description="Sir Lewis Carl Davidson Hamilton MBE HonFREng Kt é um automobilista britânico. Sete vezes campeão mundial de Fórmula 1, nos anos de 2008, 2014, 2015, 2017, 2018, 2019 e 2020, Hamilton é um dos maiores pilotos de todos os tempos, e um dos desportistas mais bem sucedidos da história.">
+        <img class="piloto" src="../pilotos/russel.jpg" alt="George Russel" data-title="George Russel" id="img2" data-description="George William Russell é um automobilista britânico, atualmente compete na Fórmula 1 pela equipe Mercedes. Russell começou no kart em 2006 e em 2014 estreou em corridas de monoposto.">
+      </div>
+      <div id="description" class="description-box">
+        <h2 id="description-title">Descrição</h2>
+        <p id="description-text"></p>
+      </div>
+    </div>
+    <script>
+      const descriptionBox = document.getElementById('description');
+      const descriptionText = document.getElementById('description-text');
+      const descriptionTitle = document.getElementById('description-title');
+
+      document.querySelectorAll('.images img').forEach(img => {
+        img.addEventListener('click', function() {
+          descriptionTitle.textContent = this.getAttribute('data-title');
+          descriptionText.textContent = this.getAttribute('data-description');
+          descriptionBox.classList.add('active');
+        });
+      });
+    </script>
+    </head>
+  </div>
+</body>
+
+</html>

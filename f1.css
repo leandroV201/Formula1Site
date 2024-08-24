@@ -1,0 +1,162 @@
+body {display: flex;
+    flex-direction: column;
+    transition: background-color 0.5s;
+}
+
+.titulo{
+    color: snow;
+    text-align: center;
+}
+h1{
+    font-family: "Racing Sans One";
+    font-weight: 300;
+}
+.header-team{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+   
+}/*nome do header-team em cima da pagina*/
+.header-team img{
+    margin-bottom: 20px;
+    margin-right: 8px;
+    margin-top: 7px;
+    width: 300px;
+    border-radius: 9px;
+}
+.header-team h1{
+    font-family: "Cardo";
+    color: snow;
+}
+.times{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center; 
+}
+
+.team {
+    font-family: "Racing Sans One";
+    border: #000 solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.team img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.mercedes {
+    background-color: #00D2BE;
+}
+
+.redbull {
+    background-color: #1E41FF;
+}
+
+.ferrari {
+    background-color: #DC0000;
+}
+
+.mclaren {
+    background-color: #FF8700;
+}
+
+.alpine {
+    background-color: #0090FF;
+}
+
+.alphatauri {
+    background-color: #4E7C9B;
+}
+
+.astonmartin {
+    background-color: #006F62;
+}
+
+.williams {
+    background-color: #005AFF;
+}
+
+.alfa {
+    background-color: #900000;
+}
+
+.haas {
+    background-color: #B6BABD;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+    max-width: 1200px;
+}
+.corpo{
+    height: 98vh;
+    width: 98vw;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.images img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+.description-box {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 50vw;
+}
+
+.description-box.active {
+    display: block;
+}
+
+.description-box h2 {
+    margin-top: 0;
+}
+
+.piloto{
+    object-fit: cover;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+.back-button:hover {
+    background-color: #0056b3;
+}
